@@ -38,9 +38,17 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-router.get('/', (req, res) => {
-  // Helpful endpoint to inspect stored messages
-  res.json({ count: inMemoryContacts.length, messages: inMemoryContacts });
+router.get('/', async (req, res, next) => {
+  try {
+    if (mongoose.connection.readyState === 1) {
+      const messages = await Contact.find().sort({ createdAt: -1 });
+      return res.json({ count: messages.length, messages });
+    }
+    // Fallback if running offline
+    res.json({ count: inMemoryContacts.length, messages: inMemoryContacts });
+  } catch (error) {
+    next(error);
+  }
 });
 
 module.exports = router;

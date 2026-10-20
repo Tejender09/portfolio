@@ -9,9 +9,10 @@ export const portfolioData = {
   ],
   status: "Available for Internships (2026)",
   location: "Jaipur, Rajasthan, India",
-  email: "shekhawattejendersingh@gmail.com",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  email: "tejendersinghshekhawat@gmail.com",
+  phone: "+91-9636667956",
+  github: "https://github.com/Tejender09",
+  linkedin: "https://www.linkedin.com/in/tejender-singh-shekhawat",
   bio: "I am a passionate Computer Science & Artificial Intelligence undergraduate at JK Lakshmipat University, Jaipur. I specialize in developing modern full-stack web applications with the MERN stack (MongoDB, Express, React, Node.js) and integrating intelligent AI/ML capabilities. I care deeply about snappy performance, accessible UX, and writing clean, scalable code.",
   
   stats: [

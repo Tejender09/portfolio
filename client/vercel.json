@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/api/resume/pdf",
+      "destination": "/Tejender_Singh_Resume.pdf"
+    },
+    {
+      "source": "/api/resume/docx",
+      "destination": "/Tejender_Singh_Resume.docx"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

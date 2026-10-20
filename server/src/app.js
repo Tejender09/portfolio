@@ -12,8 +12,24 @@ const app = express();
 
 // Security Middleware
 app.use(helmet());
+// CORS Configuration
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  process.env.CLIENT_URL,
+  /\.vercel\.app$/
+].filter(Boolean);
+
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    const isAllowed = allowedOrigins.some(allowed => {
+      if (allowed instanceof RegExp) return allowed.test(origin);
+      return allowed === origin;
+    });
+    callback(null, isAllowed);
+  },
+  credentials: true,
   optionsSuccessStatus: 200
 }));
 app.use(express.json());
