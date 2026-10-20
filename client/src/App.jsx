@@ -15,6 +15,7 @@ import DynamicSky from './components/DynamicSky.jsx';
 import CometDial from './components/CometDial.jsx';
 import GlassSurface from './components/GlassSurface.jsx';
 import GooeyNav from './components/GooeyNav.jsx';
+import TechText from './components/TechText.jsx';
 
 // ==========================================
 // 1. NAVBAR
@@ -332,9 +333,29 @@ function Hero({ onOpenAi, showToast, skyTime, onSkyChange }) {
           />
         </div>
 
-        <h1 className="hero-title">
-          Tejender Singh <span className="highlight-text">Shekhawat</span>
-        </h1>
+        <h1 className="sr-only">Tejender Singh Shekhawat - MERN & AI Developer</h1>
+        <div className="hero-tech-text-container">
+          <TechText
+            text="TEJENDER SINGH"
+            fontFamily="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+            fontWeight={800}
+            fontSize={96}
+            reveal="letter"
+            dashLength={4}
+            dashGap={2}
+            specks={16}
+            color="var(--text-primary)"
+            accentColor="var(--accent)"
+            intro="assemble"
+            introDuration={1.8}
+            clickKick
+            draggable
+            selection
+            labels
+            sweep
+            guides={false}
+          />
+        </div>
 
         <div className="typewriter-box">
           <span>{displayText}</span>
