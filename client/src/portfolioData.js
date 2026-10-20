@@ -9,7 +9,7 @@ export const portfolioData = {
   ],
   status: "Available for Internships (2026)",
   location: "Jaipur, Rajasthan, India",
-  email: "tejendersinghshekhawat@gmail.com",
+  email: "tejendersinghskhawat@gmail.com",
   phone: "+91-9636667956",
   github: "https://github.com/Tejender09",
   linkedin: "https://www.linkedin.com/in/tejender-singh-shekhawat",
@@ -238,7 +238,7 @@ const engineer = {
     },
     {
       keywords: ["hire", "internship", "availability", "available", "job", "full-time", "opportunity"],
-      answer: "Tejender is actively available for **software engineering internships and full-stack/AI developer roles for 2026**! He is based in Jaipur, India and open to both on-site and remote opportunities. You can message him through the Contact form or email him directly at `shekhawattejendersingh@gmail.com`."
+      answer: "Tejender is actively available for **software engineering internships and full-stack/AI developer roles for 2026**! He is based in Jaipur, India and open to both on-site and remote opportunities. You can message him through the Contact form or email him directly at `tejendersinghskhawat@gmail.com`."
     },
     {
       keywords: ["resume", "cv", "download", "pdf", "docx"],
@@ -246,7 +246,7 @@ const engineer = {
     },
     {
       keywords: ["contact", "email", "reach", "message", "linkedin", "github"],
-      answer: "You can reach Tejender directly:\n• **Email**: shekhawattejendersingh@gmail.com\n• **Location**: Jaipur, Rajasthan, India\n• **LinkedIn & GitHub**: Links available in the top navbar and footer!\nYou can also send a direct message through the Contact section on this page."
+      answer: "You can reach Tejender directly:\n• **Email**: tejendersinghskhawat@gmail.com\n• **Location**: Jaipur, Rajasthan, India\n• **LinkedIn & GitHub**: Links available in the top navbar and footer!\nYou can also send a direct message through the Contact section on this page."
     }
   ]
 };
