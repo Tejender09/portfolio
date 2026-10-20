@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm --prefix client install",
+  "installCommand": "npm install && npm --prefix client install",
   "buildCommand": "npm --prefix client run build",
   "outputDirectory": "client/dist",
   "framework": "vite",
@@ -13,7 +13,7 @@
       "destination": "/Tejender_Singh_Resume.docx"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
